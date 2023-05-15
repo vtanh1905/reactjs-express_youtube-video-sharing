@@ -3,7 +3,14 @@ import { Navigate } from 'react-router-dom'
 
 import { UserStore } from '../../stores'
 
-const Authenticate = (props: any) => {
+type AuthenticateProps = {
+  options?: {
+    mustLogin: boolean
+  },
+  children: JSX.Element
+}
+
+const Authenticate = (props: AuthenticateProps) => {
   const { options } = props
   const { mustLogin } = options
   const [user] = useContext(UserStore)

@@ -167,7 +167,17 @@ We decided to choose **Render** because it is free.
 
 ## Screenshots
 
+### #PC
 ![Screenshot 2023-05-15 164044](https://github.com/vtanh1905/youtube-video-sharing/assets/49771724/c37f4c30-0e83-4fdb-9971-58e708633889)
+
+### #IPAD - Vertical
+![image](https://github.com/vtanh1905/youtube-video-sharing/assets/49771724/c7a3b246-49e6-4930-adcd-bec145b2b5eb)
+
+### #IPAD - Horizontal
+![image](https://github.com/vtanh1905/youtube-video-sharing/assets/49771724/431f275a-5b5d-4e6f-9c0b-c4f32b76b3f0)
+
+### #Mobile
+![image](https://github.com/vtanh1905/youtube-video-sharing/assets/49771724/60d0c2d0-427e-4f7b-af2f-5370c70ba73b)
 
 
 ## Demo

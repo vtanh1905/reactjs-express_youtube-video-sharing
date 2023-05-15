@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout as LayoutAntd, Button, Space, Spin } from 'antd'
+import { Layout as LayoutAntd, Button, Space, Spin, FormInstance } from 'antd'
 import { Link, Outlet } from 'react-router-dom'
 import { HomeOutlined, LoadingOutlined } from '@ant-design/icons'
 import './style.scss'
@@ -9,7 +9,16 @@ import Login from '../Login'
 
 const { Header, Content } = LayoutAntd
 
-const Layout = (props: any) => {
+type LayoutProps = {
+  user?: {
+    email: string
+  }
+  loading?: boolean
+  onLogin?: (values: any, form: FormInstance) => Promise<void>
+  onLogout?: () => void
+}
+
+const Layout = (props: LayoutProps) => {
   const { user, loading, onLogin, onLogout } = props
 
   const navigate = useNavigate()

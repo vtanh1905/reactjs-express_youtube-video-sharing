@@ -1,7 +1,11 @@
 import React from 'react'
-import { Button, Form, Input } from 'antd'
+import { Button, Form, Input, FormInstance } from 'antd'
 
-const Login = (props: any) => {
+type LoginProps = {
+  onSubmit?: (values: any, form: FormInstance) => Promise<void>
+}
+
+const Login = (props: LoginProps) => {
   const { onSubmit } = props
 
   const [form] = Form.useForm()

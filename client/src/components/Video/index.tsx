@@ -1,7 +1,14 @@
 import React from 'react'
 import './style.scss'
 
-const Video = (props: any) => {
+type VideoProps = {
+  videoId: string
+  title: string
+  shareBy: string
+  description: string
+}
+
+const Video = (props: VideoProps) => {
   const { videoId, title, shareBy, description } = props
 
   return (
